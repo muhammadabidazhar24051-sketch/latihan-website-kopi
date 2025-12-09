@@ -1,0 +1,310 @@
+/* =========================================================
+   RESET & DASAR
+========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   HEADER & NAVIGASI
+========================================================= */
+header {
+  background-color: #4a2c11;
+  color: white;
+  text-align: center;
+  padding: 25px 0 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #e4b97b;
+  color: #3b2410;
+}
+
+/* =========================================================
+   MAIN KONTEN
+========================================================= */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #4a2c11;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #e4b97b;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* =========================================================
+   TABEL PRODUK
+========================================================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5f1ea;
+  color: #3b2410;
+}
+
+tr:nth-child(even) {
+  background-color: #faf8f4;
+}
+
+tr:hover {
+  background-color: #f1e8da;
+}
+
+/* =========================================================
+   FORM KONTAK
+========================================================= */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+form label {
+  font-weight: 600;
+  color: #3b2410;
+  margin-bottom: 6px;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: #4a2c11;
+}
+
+form input[type="file"],
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-top: 6px;
+}
+
+form button,
+form input[type="submit"],
+form input[type="reset"] {
+  background-color: #4a2c11;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover,
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background-color: #7b4d24;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   GALERI PRODUK & KEGIATAN
+========================================================= */
+.galeri {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+
+.card h3 {
+  color: #4a2c11;
+  font-size: 1.2rem;
+  margin: 12px 0 6px;
+}
+
+.card p {
+  padding: 0 15px 15px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+                     TENTANG KAMI                     
+========================================================= */
+main ul,
+main ol {
+  list-style-position: inside; /* titik/angka sejajar teks */
+  margin: 15px auto;
+  padding: 0;
+  display: inline-block;       /* biar bisa ditengah */
+  text-align: left;            /* isi tetap rata kiri */
+}
+
+main ul li,
+main ol li {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Jika ingin gaya modern tanpa bullet, bisa aktifkan ini:
+main ul {
+  list-style: none;
+  padding: 0;
+}
+main ul li::before {
+  content: "— ";
+  color: #c89a5b;
+  font-weight: bold;
+}
+*/
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+  background-color: #4a2c11;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 60px;
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   MEDIA QUERIES (RESPONSIVE)
+========================================================= */
+@media (max-width: 992px) {
+  .card {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .galeri {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
